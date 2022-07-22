@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Primero pedimos numero de columnas y filas
+        let columnas = parseInt(prompt("Introduzca número de columnas."));
+        let filas = parseInt(prompt("Introduzca número de filas."));
+        let cruz = "X";
+        let circulo = "O";
+        let espacio = "";
+        let mensaje="";
+
+        //Hacemos el bucle que vaya recorriendo fila por columna.
+        for (let i = 1; i <= columnas; i++) {
+            //Para las filas impares (1) empezamos con la primera columna (1) con circulo
+            if (i % 2 != 0) {
+
+                for (let j = 1; j <= filas; j++) {
+                    if (j % 2 != 0) {
+                        mensaje = mensaje + circulo + " ";
+                        //console.log(mensaje);
+                    }
+                    else {
+                        mensaje = mensaje + cruz + " ";
+                        //console.log(mensaje);
+                    }
+                }
+                console.log(mensaje);
+                mensaje="";
+            } //if
+            //Para las filas pares (2) empezamos con la primera columna con pares (2) con cruz
+
+            else {
+
+                for (let j = 1; j <= filas; j++) {
+                    if (j % 2 != 0) {
+                        mensaje = mensaje + cruz + " ";
+                        //console.log(mensaje);
+                    }
+                    else {
+                        mensaje = mensaje + circulo + " ";
+                        //console.log(mensaje);
+                    }
+                }
+                console.log(mensaje);
+                mensaje="";
+            } //else
+
+
+        } //for
+
+
+    </script>
+
+
+</body>
+
+</html>
