@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2vh 5vh 2vh 5vh;
+    background-color: rgb(0, 183, 255);
+}
+
+
+#list {
+    list-style-type: none;
+    display : flex;
+
+}
+#subheader_list{
+    display:flex;
+    justify-content: end;
+}
+
+li {
+    margin: 0 1vh 0 1vh;
+    padding: 0 2vh 0 2vh;
+    background-color:white;
+    border-radius: 4px;
+ }
+
+ #title{
+    color: black;
+}
+#subtitle{
+    color: black;
+}
